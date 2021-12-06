@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<input type="text" placeholder = "enter a string" id = "str"></input>
+<button onclick="uppercase()">uppercase</button>
+</body>
+<script>
+function uppercase(){
+let str = document.getElementById('str').value;
+if (str == str.toUpperCase())
+{
+  document.write(str.toLowerCase());
+}
+else
+{
+ document.write(str.toUpperCase());
+}
+}
+</script>
+</html>
+

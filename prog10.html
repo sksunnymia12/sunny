@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<input type="text" placeholder = "enter the array" id = "str"></input>
+<button onclick="sort()">sort</button>
+</body>
+<script>
+function sort(){
+let str=document.getElementById('str').value;
+let sortarray=str.split(',');
+for(let i=0;i<sortarray.length;i++)
+{
+  for(j=i+1;j<sortarray.length;j++){
+  if(+sortarray[i]>+sortarray[j])
+  {
+  let temp=sortarray [i];
+  sortarray [i]= sortarray [j];
+  sortarray [j]= temp;
+  }
+  }
+}
+  document.write(sortarray);
+  }
+  </script>
+  </html>
+  

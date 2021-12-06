@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <p>x</p>
+    <input id="inp" type="number" />
+    <button id="bt">Value</button>
+    <p>Reasult</p>
+    <p id="res"></p>
+    <script type="text/javascript">
+        const bt = document.querySelector('#bt')
+        const inp = document.querySelector('#inp')
+        const res = document.querySelector('#res')
+
+        bt.addEventListener('click',()=>{
+            if(inp.value.length > 0){
+                let n = parseFloat(inp.value)
+                n = n + n/2 + n/4 + n/8
+                res.innerText = n.toString()
+            }
+        })
+    </script>
+</body>
+</html>
